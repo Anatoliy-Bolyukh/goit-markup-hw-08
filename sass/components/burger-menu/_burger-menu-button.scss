@@ -31,8 +31,11 @@
 
 
     @media screen and (min-width: 768px) {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
         margin-left: auto;
-        display: block;
+
 
     }
 
@@ -47,8 +50,10 @@
     }
 
     @media screen and (min-width: 1200px) {
-        gap: 30px;
         display: flex;
+        flex-direction: row;
+        gap: 30px;
+
     }
 }
 
@@ -145,6 +150,10 @@
 
     @media screen and (min-width: 768px) {
         display: none;
+    }
+
+    &:hover {
+        fill: var(--accent-color);
     }
 }
 

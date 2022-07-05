@@ -48,6 +48,11 @@ body {
   margin-left: auto;
   margin-right: auto;
 }
+@media screen and (min-width: 1200px) {
+  .section {
+    padding: 94px 0;
+  }
+}
 
 /* палітра кольорів */
 /* колір основного тексту rgba(33, 33, 33, 1)*/
@@ -179,6 +184,12 @@ img {
     max-height: 10px;
   }
 }
+@media screen and (min-width: 1200px) {
+  .contacts__icon {
+    width: 16px;
+    height: 12px;
+  }
+}
 
 .contacts__link {
   font-weight: 500;
@@ -190,13 +201,13 @@ img {
 }
 @media screen and (min-width: 768px) {
   .contacts__link {
-    margin-bottom: 10px;
     font-size: 12px;
     line-height: 1.16;
   }
 }
 @media screen and (min-width: 1200px) {
   .contacts__link {
+    font-size: 14px;
     margin: 0;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -256,8 +267,15 @@ img {
 }
 @media screen and (min-width: 768px) {
   .contacts {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 8px;
     margin-left: auto;
-    display: block;
   }
 }
 @media screen and (min-width: 768px) {
@@ -272,10 +290,14 @@ img {
 }
 @media screen and (min-width: 1200px) {
   .contacts {
-    gap: 30px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    gap: 30px;
   }
 }
 
@@ -386,6 +408,9 @@ img {
     display: none;
   }
 }
+.burger-menu__button:hover {
+  fill: var(--accent-color);
+}
 
 .burger-menu__button.is-open {
   position: absolute;
@@ -408,21 +433,8 @@ img {
   right: 15px;
 }
 
-.hero__container {
-  padding: 200px 0px;
-  text-align: center;
-}
-
-.hero__title {
-  font-size: 26px;
-  line-height: 1.62;
-  text-align: center;
-}
-
 .hero {
   padding: 0;
-  max-width: 480px;
-  height: 400px;
   background-position: center;
   background-size: cover;
   background-color: #2F303A;
@@ -439,8 +451,6 @@ img {
   .hero {
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/tablet-images/tablet-header1.jpg);
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/tablet-images/tablet-header1.jpg);
-    max-width: 768px;
-    height: 400px;
   }
 }
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
@@ -454,7 +464,6 @@ img {
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/pc-images/pc-header1.jpg);
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/pc-images/pc-header1.jpg);
     max-width: 1600px;
-    height: 600px;
   }
 }
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
@@ -465,18 +474,30 @@ img {
 }
 
 .hero__container {
-  padding: 200px 0px;
+  padding: 118px 0px;
   text-align: center;
+}
+@media screen and (min-width: 1200px) {
+  .hero__container {
+    padding: 200px 0px;
+  }
 }
 
 .hero__title {
   margin-left: auto;
   margin-right: auto;
   font-weight: 900;
+  max-width: 360px;
   margin-bottom: 30px;
   letter-spacing: 0.06em;
   color: #FFFFFF;
   text-transform: uppercase;
+}
+@media screen and (min-width: 1200px) {
+  .hero__title {
+    width: 696px;
+    font-size: 44px;
+  }
 }
 
 .hero__button {
@@ -494,8 +515,10 @@ img {
 }
 
 /* список переваг */
-.features {
-  padding: 60px 0;
+@media screen and (min-width: 1200px) {
+  .features {
+    padding-bottom: 0;
+  }
 }
 
 .features-list {
