@@ -1,0 +1,39 @@
+@import"./base/base";
+@import"./utils/vars";
+@import"./base/reset";
+
+// шапка
+
+@import"./components/header";
+@import"./components/logo";
+@import"./components/navigation";
+@import"./components/contact";
+@import"./components/burger-menu/burger-menu-button";
+
+// герой
+
+@import"./components/mobile-phone/_hero";
+@import"./components/hero";
+@import"./components/mobile-phone/_features";
+@import"./components/features";
+@import"./components/examples";
+@import"./components/team";
+@import"./components/customers";
+
+// підвал
+
+@import"./components/footer";
+@import"./components/address";
+@import"./components/join";
+@import"./components/subscription";
+
+// модельнне вікно
+
+@import"./components/modal/modal";
+@import"./components/modal/form";
+@import"./components/modal/agreement";
+
+// портфоліо
+
+@import"./components/portfolio/filter";
+@import"./components/portfolio/resource";

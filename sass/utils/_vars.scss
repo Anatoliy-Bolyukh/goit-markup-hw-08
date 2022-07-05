@@ -1,0 +1,22 @@
+/* палітра кольорів */
+/* колір основного тексту rgba(33, 33, 33, 1)*/
+/* колір вторичного тексту rgba(117, 117, 117, 1)*/
+/* колір основного заголовку rgba(255, 255, 255, 1)*/
+/* колір акценту color: #2196F3;*/
+/* основний колір фону #E5E5E5;*/
+/* задній фон SVG rgba(245, 244, 250, 1)*/
+/* палітра кольорів */
+/* фон кнопки rgba(245, 244, 250, 1)*/
+/* background-acent background: rgba(33, 150, 243, 0.9) */
+
+:root {
+    --secondary-color: rgba(117, 117, 117, 1);
+    --main-color: rgba(33, 33, 33, 1);
+    --main-title-color: rgba(255, 255, 255, 1);
+    --accent-color: rgba(33, 150, 243, 1);
+    --main-background: #FFFFFF;
+    --background-SVG: rgba(245, 244, 250, 1);
+    --icon-color: rgba(175, 177, 184, 1);
+    --background-botton: rgba(245, 244, 250, 1);
+    --background-accent: rgba(33, 150, 243, 0.9);
+}

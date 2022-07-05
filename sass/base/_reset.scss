@@ -1,0 +1,19 @@
+/* ресет */
+
+h1,
+h2,
+h3,
+ul,
+p,
+a {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    display: block;
+}
+
+img {
+    display: block;
+    width: 100%;
+}

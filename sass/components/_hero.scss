@@ -1,0 +1,84 @@
+.hero {
+    padding: 0;
+
+    background-position: center;
+    background-size: cover;
+    background-color: #2F303A;
+    // background-image: linear-gradient(to right,
+    //         rgba(47, 48, 58, 0.4),
+    //         rgba(47, 48, 58, 0.4)),
+    //     url(../images/Img-hero.jpg);
+
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url(../../images/phone-images/phone-header1.jpg);
+
+    @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+            url(../../images/phone-images/phone-header2x.jpg);
+    }
+
+    @media screen and (min-width: 768px) {
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+            url(../../images/tablet-images/tablet-header1.jpg);
+
+        @media (min-device-pixel-ratio: 2),
+        (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+                url(../../images/tablet-images/tablet-header2x.jpg);
+        }
+    }
+
+    @media screen and (min-width: 1280px) {
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+            url(../../images/pc-images/pc-header1.jpg);
+
+        @media (min-device-pixel-ratio: 2),
+        (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+                url(../../images/pc-images/pc-header2x.jpg);
+        }
+    }
+
+
+}
+
+.hero__container {
+    padding: 200px 0px;
+    text-align: center;
+}
+
+.hero__title {
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: 900;
+    // width: 696px;
+    margin-bottom: 30px;
+    // font-size: 44px;
+    // line-height: 1.36;
+    letter-spacing: 0.06em;
+
+    color: #FFFFFF;
+    text-transform: uppercase;
+}
+
+.hero__button {
+    padding: 10px 32px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+    border-radius: 4px;
+    border: 0;
+
+    color: var(--main-title-color);
+    background-color: var(--accent-color);
+    font-family: inherit;
+    cursor: pointer;
+}

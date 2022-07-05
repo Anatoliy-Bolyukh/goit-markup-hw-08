@@ -1,0 +1,75 @@
+/* угода */
+
+.agreement {
+    display: flex;
+    align-items: center;
+}
+
+.form__agreement {
+    margin-top: 20px;
+    margin-left: 17px;
+}
+
+.agreement__checkbox {
+    position: absolute;
+    -webkit-appearance: none;
+
+}
+
+.agreement__custom-checkbox {
+    display: block;
+    width: 16px;
+    height: 15px;
+    background-image: url(../images/check-box/Vector.svg);
+
+}
+
+.agreement__checkbox:checked+.agreement__custom-checkbox {
+    background-image: url(../images/check-box/icon\ check.svg);
+}
+
+.agreement__text {
+    margin-left: 7px;
+    font-size: 12px;
+    line-height: 1.16;
+
+
+    letter-spacing: 0.03em;
+
+    color: #757575;
+
+    @media screen and (min-width: 1200px) {
+        font-size: 14px;
+        line-height: 1.71;
+    }
+}
+
+.agreement__link {
+    display: inline-block;
+    color: var(--accent-color);
+    text-underline-position: under;
+    text-decoration: underline;
+
+}
+
+.form__button {
+    display: block;
+    align-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+
+    padding: 10px 55px;
+    margin-top: 30px;
+    background: #2196F3;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    color: var(--main-background);
+    border: none;
+}

@@ -1,0 +1,101 @@
+/* форма */
+
+.form__title {
+    margin-bottom: 12px;
+    font-size: 20px;
+    line-height: 1.15;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+
+.form__label {
+    display: block;
+    position: relative;
+}
+
+.form__span {
+    display: block;
+    margin-top: 10px;
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.01em;
+    color: #757575;
+
+}
+
+.form__input {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 42px;
+    margin-top: 4px;
+    width: 100%;
+    height: 40px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        border-color: var(--accent-color);
+        outline: none;
+    }
+
+    &:hover+.form__icon,
+    &:focus+.form__icon {
+        fill: var(--accent-color);
+    }
+
+}
+
+.form__icon {
+    margin-left: 12px;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    display: inline-block;
+}
+
+.form__textarea {
+    display: block;
+    margin-top: 4px;
+    width: 100%;
+    height: 120px;
+
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    resize: none;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        border-color: var(--accent-color);
+        outline: none;
+    }
+}
+
+.form__text {
+    margin-left: 8px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+
+    letter-spacing: 0.03em;
+
+    color: #757575;
+}
+
+.form__textarea {
+    padding: 12px 16px;
+    font-size: 14px;
+    line-height: calc(16/14);
+    letter-spacing: 0.01em;
+
+}
+
+.form textarea::placeholder {
+    color: rgba(117, 117, 117, 0.5);
+}
