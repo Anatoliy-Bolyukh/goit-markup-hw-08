@@ -1,6 +1,8 @@
 .hero {
     padding: 0;
 
+    max-width: 480px;
+    height: 400px;
     background-position: center;
     background-size: cover;
     background-color: #2F303A;
@@ -23,6 +25,8 @@
     @media screen and (min-width: 768px) {
         background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
             url(../images/tablet-images/tablet-header1.jpg);
+        max-width: 768px;
+        height: 400px;
 
         @media (min-device-pixel-ratio: 2),
         (-webkit-min-device-pixel-ratio: 2),
@@ -36,6 +40,9 @@
     @media screen and (min-width: 1200px) {
         background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
             url(../images/pc-images/pc-header1.jpg);
+        max-width: 1600px;
+        height: 600px;
+
 
         @media (min-device-pixel-ratio: 2),
         (-webkit-min-device-pixel-ratio: 2),
