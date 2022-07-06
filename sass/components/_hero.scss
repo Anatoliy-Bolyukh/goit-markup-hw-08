@@ -70,6 +70,7 @@
     margin-right: auto;
     font-weight: 900;
     max-width: 360px;
+    line-height: 1.62;
     // min-width: 696px;
     margin-bottom: 30px;
     // font-size: 44px;
@@ -80,7 +81,7 @@
     text-transform: uppercase;
 
     @media screen and (min-width: 1200px) {
-        width: 696px;
+        max-width: 696px;
         font-size: 44px;
     }
 }

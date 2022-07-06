@@ -33,4 +33,10 @@
     &:focus {
         color: var(--accent-color);
     }
+
+    @media screen and (min-width: 1200px) {
+        margin-bottom: 0;
+    }
+
+
 }
